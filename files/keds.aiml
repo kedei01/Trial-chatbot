@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+        <pattern>HELLO ^</pattern>
+        <template>Well hello there! Welcome</template>
+    </category>
+      <category>
+        <pattern>HI ^</pattern>
+        <template>Hi there! Welcome</template>
+    </category>
+    <category>
+<pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category>
+<pattern>Holla</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>HEY</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>HI THERE</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category>
+<pattern>HOWDY</pattern>
+<template><srai>HI</srai></template>
+</category>
+:
+<category>
+<pattern>HI</pattern>
+<template>Hi, how are you?</template>
+</category>
+  <category>
+<pattern>WHO ARE YOU</pattern>
+<template><srai>WHAT ARE YOU</srai></template>
+</category>
+<category>
+<pattern>ARE YOU HUMAN</pattern>
+<template><srai>WHAT ARE YOU</srai></template>
+</category>
+<category>
+<pattern>HOW R U</pattern>
+<template><srai>HOW ARE YOU</srai></template>
+</category>
+:
+<category>
+    <pattern>WHAT ARE YOU</pattern>
+    <template> I'm a bot and you? </template>
+  </category>
+     <category>
+    <pattern>My name is *</pattern>
+    <template>Nice to meet you <set name="name"><person/></set>.<br></br>
+    Welcome, what can i do for you?
+    </template>
+  </category>
+
+<category><pattern># DO I #  <set>keds</set> # <set>kedei</set>#</pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+<category><pattern># WHAT IS #  <set>keds</set> # <set>kedei</set>#</pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+<category><pattern># WHAT IS <set>keds</set># <set>kedei</set>#</pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+<category><pattern># WHATS # <set>kedei</set># <set>keds</set></pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+<category><pattern># TELL ME ABOUT #  <set>keds</set> # <set>kedei</set>#</pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+
+<category><pattern># I LIKE #  <set>keds</set> # <set>kedei</set>#  <set>keds</set></pattern>
+<template>I know right! I like it too.
+You should study it.</template>
+</category>
+<category><pattern># TELL ME IF #  <set>keds</set> # <set>kedei</set>#</pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+
+
+<category>
+<pattern>does niit teach python</pattern>
+<template><srai>does niit offer python</srai></template>
+</category>
+<category>
+<pattern>do they offer python</pattern>
+<template><srai>does niit offer python</srai></template>
+</category>
+<category>
+<pattern>is python taught at niit</pattern>
+<template><srai>does niit offer python</srai></template>
+</category>
+:
+<category>
+    <pattern>does niit offer python</pattern>
+    <template><ul>Yes.</ul>
+        NIIT Limited, a global leader in skills and talent development, has introduced 'Programming using Python' - the next generation programming for developers. </template>
+</category>
+<category>
+<pattern>So about niit</pattern>
+<template><srai>CAN WE TALK ABOUT NIIT</srai></template>
+</category>
+<category>
+<pattern>Tell me about niit</pattern>
+<template><srai>CAN WE TALK ABOUT NIIT</srai></template>
+</category>
+<category>
+<pattern>Lets discuss niit</pattern>
+<template><srai>CAN WE TALK ABOUT NIIT</srai></template>
+</category>
+<category>
+<pattern>what is niit</pattern>
+<template><srai>CAN WE TALK ABOUT NIIT</srai></template>
+</category>
+<category>
+<pattern>lets talk about niit</pattern>
+<template><srai>CAN WE TALK ABOUT NIIT</srai></template>
+</category>
+<category>
+<pattern>niit</pattern>
+<template><srai>CAN WE TALK ABOUT NIIT</srai></template>
+</category>
+:
+<category>
+<pattern>CAN WE TALK ABOUT NIIT</pattern>
+<template>Do you like <set name="topic">niit</set>?</template>
+</category>
+
+<topic name= "niit">
+<category>
+<pattern>Yes I do</pattern>
+<template>I like niit too.
+</template>
+</category>
+ <category><pattern>#So DO YOU # <set>keds</set> # <set>kedei</set></pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+ <category><pattern># DO YOU # <set>keds</set> # <set>kedei</set></pattern>
+<template><map name="kedeimapping"><star index="5"/></map></template>
+</category>
+<!--<category><pattern># DO YOU # <set>keds</set> # java development </pattern>-->
+<!--<template>NIIT Java certification training course helps you learn oops concepts in Java programming and its implementation in Java software development.<think><set name="it"><set name="topic">.net development</set></set></think></template>-->
+<!--</category>-->
+
+<!--<category><pattern># DO YOU # HAVE # java development #</pattern>-->
+<!--<template><srai>DO YOU LIKE java development</srai></template>-->
+<!--</category>-->
+
+<category><pattern># DO YOU <set>keds</set>to finish abroad for every course # </pattern>
+<template>It depends on the program package you're studying.If its mms-software ,you'd have to finish abroad because that's the full package.<think><set name="it"><set name="topic">niit</set></set></think></template>
+</category>
+
+<!--<category><pattern># courses and programs #</pattern>-->
+<!--<template><srai>DO YOU LIKE Java</srai></template>-->
+<!--</category>-->
+
+<!--<category><pattern># DO YOU # <set>keds</set> # java</pattern>-->
+<!--<template><random>-->
+<!--  <li>java is very resourceful as its useful in many technological areas of life.</li>-->
+<!--  <li><srai>DO YOU LIKE java</srai></li>-->
+<!--</random></template>-->
+<!--</category>-->
+<category>
+    <pattern>so tell me about the courses offered</pattern>
+<template><srai>i want to know the courses offered</srai></template>
+</category>
+<category>
+<pattern>can you list the courses offered</pattern>
+<template><srai>i want to know the courses offered</srai></template>
+</category>
+<category>
+<pattern>WHAT ARE THE COURSES OFFERED</pattern>
+<template><srai>i want to know the courses offered</srai></template>
+</category>
+<category>
+<pattern>what courses are available</pattern>
+<template><srai>i want to know the courses offered</srai></template>
+</category>
+<category>
+<pattern>what courses are there in niit</pattern>
+<template><srai>i want to know the courses offered</srai></template>
+</category>
+<category>
+<pattern>what are the courses</pattern>
+<template><srai>i want to know the courses offered</srai></template>
+</category>
+:
+<category>
+    <pattern>i want to know the courses offered</pattern>
+    <template>NIIT has a variety of programs, ranging from;
+      <ul><li>mmsSoftware Engineering</li><li>mmsNetwork Engineering</li><li>Java</li><li>webdevelopment</li><li>Database Management</li><li>.net development</li><li>android</li><li>mobileapplication</li><li>Web Design Technology</li><li>ITsecurity</li></ul></template>
+</category>
+<category>
+<pattern>Thank you for the information!</pattern>
+<template><srai>Thanks for the information.</srai></template>
+</category>
+<category>
+<pattern>Thank you!</pattern>
+<template><srai>Thanks for the information.</srai></template>
+</category>
+:
+<category>
+<pattern>Thanks for the information.</pattern>
+<template>you're most welcome.
+</template>
+</category>
+<category>
+<pattern>Do you have contacts i could reach</pattern>
+<template><srai>How i contact an niit personnel</srai></template>
+</category>
+<category>
+<pattern>How can i get through to a personnel there</pattern>
+<template><srai>How i contact an niit personnel</srai></template>
+</category>
+<category>
+<pattern>I want to call</pattern>
+<template><srai>How i contact an niit personnel</srai></template>
+</category>
+:
+<category>
+<pattern>How i contact an niit personnel</pattern>
+<template>
+Call us @;
+<br></br>
+<ul><li>09055096016</li>
+<li>09055096017</li>
+<li>09055096018</li></ul>
+</template>
+</category>
+</topic>
+
+ <category>
+    <pattern>*</pattern>
+    <template>I am sorry, I do not understand</template>
+  </category>
+</aiml>
